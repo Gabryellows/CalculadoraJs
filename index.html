@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Calculadora Trabalho Eduardo Jose Gautier</title> 
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+	<body>
+		<div class="calculadora">   
+				<table> 	
+					<form action="#" name="calculadora" id="calculadora">
+						<p id="textoExibicao">0</p>
+
+						<td>
+							<input type="button" class="largo" value="<" onclick="apagarParcial()"  />
+							<input type="button" class="largo" value="C" onclick="apagarTotal()"  />
+						</td>
+
+						<tr>
+							<td>
+							<input type="button" value="7" onclick="numero('7')" />
+							<input type="button" value="8" onclick="numero('8')" />
+							<input type="button" value="9" onclick="numero('9')" />
+							<input type="button" class='candb' value="/" onclick="operar('/')"  />
+							</td>
+						</tr>
+
+
+					 	<tr>
+					 		<td>
+								<input type="button" value="4" onclick="numero('4')" />
+								<input type="button" value="5" onclick="numero('5')" />
+								<input type="button" value="6" onclick="numero('6')" />
+								<input type="button" class='candb' value="*" onclick="operar('*')" />
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<input type="button" value="1" onclick="numero('1')" />
+								<input type="button" value="2" onclick="numero('2')" />
+								<input type="button" value="3" onclick="numero('3')" />
+								<input type="button" class='candb' value="-" onclick="operar('-')" />
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<input type="button" value="0" onclick="numero('0')" />
+								<input type="button" value="." onclick="numero('.')" />
+								<input type="button" class='candb' value="=" onclick="igualar()" />
+								<input type="button" class='candb' value="+" onclick="operar('+')" />
+							</td>
+						</tr>
+
+				</form>
+			</table> 
+		</div>
+</body>
+</html>

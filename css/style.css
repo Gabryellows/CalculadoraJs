@@ -1,0 +1,47 @@
+.calculadora { 
+	border: 3px green double;
+	border-radius: 8px;
+	width: 260px;
+	height: 320px;
+	text-align: center;
+    background-color: lightblue; 
+}
+				 
+#textoExibicao { 
+   width: 200px; 
+   border: 2px black solid; 
+   border-radius: 8px; 
+   text-align: right; 
+   position: relative; 
+   left: 23px;  
+   padding: 0px 5px;
+   background-color: white; 
+   font-family: "courier new"; 
+   font-size: 25px;
+   overflow: hidden;
+}
+
+.calculadora [type=button] { 
+	text-align: center; 
+   	position: relative; 
+   	left: 35px;  
+	width: 45px; 
+	padding: 0; border-radius: 8px; color: black;
+    text-shadow: -1px 0 black, 0 1px white, 1px 0 white, 0 -1px black;
+    font-size:25px;
+}
+
+.calculadora input.largo { 
+	text-align: center; 
+   	position: relative; 
+   	left: 65px;  
+	background-color: #b2b2b2;
+	width: 60px;
+}
+.calculadora input.candb{
+	background-color: #b2b2b2;
+}
+.fieldset {
+   width: 260px;
+	height: 320px;
+}
