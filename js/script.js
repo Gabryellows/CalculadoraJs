@@ -8,7 +8,7 @@ exibicao=document.getElementById("textoExibicao");
 par = 0; 
 x="0"; 
 xi=1; 
-coma=0;
+soma=0;
 ni=0; 
 op="no";
 
@@ -16,7 +16,7 @@ function numero(num) {
 
 	if(par ==1){ 
 
-		coma = 0;
+		soma = 0;
 		par = 0;
   }
 	
@@ -26,17 +26,17 @@ function numero(num) {
             if (num==".") {
                exibicao.innerHTML="0.";
                x=num; 
-               coma=1;
+               soma=1;
             }
          }
 
            else { 
-               if (num=="." && coma==0) { 
+               if (num=="." && soma==0) { 
                    exibicao.innerHTML+=num;
                    x+=num;
-                   coma=1;  
+                   soma=1;  
                }
-               else if (num=="." && coma==1) {} 
+               else if (num=="." && soma==1) {} 
                else {
                    exibicao.innerHTML+=num;
                    x+=num
@@ -71,13 +71,13 @@ function operar(oper) {
 function apagarParcial() {
         exibicao.innerHTML=0;
         x=-1;
-        coma=0;			
+        soma=0;			
 
 }
 function apagarTotal() {
          exibicao.innerHTML=0;
          x="0";
-         coma=0;
+         soma=0;
          ni=0
          op="no"
 		     par = 0;
